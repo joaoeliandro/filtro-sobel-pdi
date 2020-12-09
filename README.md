@@ -47,8 +47,8 @@
 
 | Prewitt  | Sobel  |
 |:---:|:---:|
-| <a href="#sobre-prewitt">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  | <a href="#sobre-sobel">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  |
-| <a href="#formulação-prewitt">Formulação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  | <a href="#formulação-sobel">Formulação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  |
+| <a href="#sobre-prewitt">Sobre</a>&nbsp;&nbsp;&nbsp;  | <a href="#sobre-sobel">Sobre</a>&nbsp;&nbsp;&nbsp; 
+| <a href="#formulação-prewitt">Formulação</a>&nbsp;&nbsp;&nbsp; | <a href="#formulação-sobel">Formulação</a>&nbsp;&nbsp;&nbsp; |
 
 #### Sobre Prewitt
 
@@ -57,8 +57,7 @@
 #### Formulação Prewitt
 
 > Matematicamente, o operador usa dois 3×3 kernels que são convolucionadas com a imagem original para calcular aproximações das derivadas - uma para alterações horizontais, e uma para verticais. Se definirmos como a imagem de origem, e são duas imagens que em cada ponto contém a horizontal e a vertical de derivados de aproximações, os últimos são calculados como:
->$$
-G_{x} =  \begin{bmatrix}
+>$$G_{x} =  \begin{bmatrix}
     -1 & 0 & 1 \\
     -1 & 0 & 1 \\
     -1 & 0 & 1 \\
@@ -68,13 +67,11 @@ G_{y} =  \begin{bmatrix}
     -1 & -1 & -1 \\
     0 & 0 & 0 \\
     1 & 1 & 1 \\
-\end{bmatrix} * A
->$$
+\end{bmatrix} * A$$
 > onde aqui denota uma operação deconvolução 1-dimensional.
 
 > Como os kernels Prewitt podem ser decompostos como produtos de um kernel de média e diferenciação, eles calculam o gradiente com suavização. Portanto, é um filtro separável. Por exemplo, pode ser escrito como:
->$$
-\begin{bmatrix}
+>$$\begin{bmatrix}
     -1 & 0 & 1 \\
     -1 & 0 & 1 \\
     -1 & 0 & 1 \\
@@ -86,8 +83,7 @@ G_{y} =  \begin{bmatrix}
 \end{bmatrix}
 \begin{bmatrix}
     -1 & 0 & 1\\
-\end{bmatrix}
->$$
+\end{bmatrix}$$
 
 > O x-coordenar é aqui definido como o aumento no "direito"-direção, e o y-coordenadas é definido como o aumento no "de baixo"-direção. Em cada ponto da imagem, resultante do gradiente de aproximações podem ser combinadas para dar a magnitude do gradiente, usando:
 >
