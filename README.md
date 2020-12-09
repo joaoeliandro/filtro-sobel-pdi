@@ -45,11 +45,10 @@
 
 ### Guia
 
-| Prewitt  |  | Sobel  |
-|:---:|:---:|:---:|
-| <a href="#sobre-prewitt">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  | <a href="#sobre-sobel">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  |   |
-| <a href="#formulação-prewitt">Formulação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  | <a href="#formulação-sobel">Formulação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  |   |
-|   |   |   |
+| Prewitt  | Sobel  |
+|:---:|:---:|
+| <a href="#sobre-prewitt">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  | <a href="#sobre-sobel">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  |
+| <a href="#formulação-prewitt">Formulação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  | <a href="#formulação-sobel">Formulação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  |
 
 #### Sobre Prewitt
 
