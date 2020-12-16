@@ -1,6 +1,6 @@
 from PIL import Image
 import open as openImage
-import colors as color
+from utils import colors as color
 
 def createImage(size, color):
   if color:
@@ -48,11 +48,11 @@ def flagJapan(height):
   return flag
 
 if __name__ == "__main__":
-  # triangle = triangle((700, 700))
-  # openImage.showImage(triangle)
+  triangle = triangle((700, 700))
+  openImage.saveImage(triangle, "triangle.jpg")
 
-  # flagFrance = flagFrance(700)
-  # openImage.showImage(flagFrance)
+  flagFrance = flagFrance(700)
+  openImage.saveImage(flagFrance, "flagFrance.jpg")
 
   flagJapan = flagJapan(700)
-  openImage.showImage(flagJapan)
+  openImage.saveImage(flagJapan, "flagJapan.jpg")
