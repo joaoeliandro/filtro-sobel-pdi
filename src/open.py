@@ -25,3 +25,9 @@ def showVertical(image1, image2):
   imageVertical.show()
 
   return imageVertical
+  
+def showHorizontal(image1, image2):
+  imageVertical = Image.fromarray(np.hstack((np.array(image1), np.array(image2))))
+  imageVertical.show()
+
+  return imageVertical
