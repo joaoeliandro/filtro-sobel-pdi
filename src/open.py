@@ -1,4 +1,5 @@
 from PIL import Image
+import numpy as np
 import os
 
 INPUT_DIR_IMAGE = "images"
@@ -18,3 +19,15 @@ def saveImage(file, filename):
 def showImage(image):
   imageToShow = image
   imageToShow.show()
+
+def showVertical(image1, image2):
+  imageVertical = Image.fromarray(np.vstack((np.array(image1), np.array(image2))))
+  imageVertical.show()
+
+  return imageVertical
+  
+def showHorizontal(image1, image2):
+  imageVertical = Image.fromarray(np.hstack((np.array(image1), np.array(image2))))
+  imageVertical.show()
+
+  return imageVertical

@@ -1,6 +1,5 @@
 from PIL import Image
 import open as openImage
-import os
 
 def grayScale(imageColored):
   width, height = imageColored.size
